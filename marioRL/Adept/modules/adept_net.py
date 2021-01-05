@@ -1,6 +1,6 @@
 """
     Custom adept network
-     Inherit from adept/network/net3d/four_conv
+    Inherit from adept/network/net3d/four_conv
 """
 from torch import nn
 from torch.nn import functional as F
