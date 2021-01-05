@@ -1,5 +1,5 @@
-# Mario_RL
-Implement Mario DQN from Pytorch with Adept Framework @Heron Systems
+# Mario_RL_Adept
+Implement Mario DQN from Pytorch Tutorial with Adept Framework @Heron Systems
 
 Steps:
 1/ Run Mario Pytorch Code on local machine
