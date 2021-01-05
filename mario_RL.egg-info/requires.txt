@@ -1,0 +1,10 @@
+numpy>=1.19.2
+pandas
+gym
+torch
+Pillow<=7.2.0
+matplotlib
+torchvision
+nes_py
+gym_super_mario_bros
+adeptRL>=0.2.0

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mario-RL
+Version: 0.0.1
+Summary: Mario Reinforcement Learning
+Home-page: UNKNOWN
+Author: Minh Nguyen
+Author-email: mnguyen0226@vt.edu
+License: GNU
+Description: # Mario_RL
+        Implement Mario from Pytorch
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
