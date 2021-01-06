@@ -5,6 +5,14 @@ Framework: https://github.com/heronsystems/adeptRL
 Wiki@Heron: http://192.168.1.30/
 
 =======================================================================================================
+Fix in install adeptRL!
+
+    adeptRL: git clone repo on Heron Systems
+    After git clone, git pull adept, do:
+    pip install -U ray[tune]
+    conda install protobuf
+
+=======================================================================================================
 
 ***** Training command local or gpu *****
 
