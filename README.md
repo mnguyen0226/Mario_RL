@@ -21,13 +21,17 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
 ***** Steps *****
 
 1/ Run Mario Pytorch Code on local machine
+
 2/ Divide Mario Code into sub-sections
+
 3/ Implement Mario Pytorch on Adept framework and train with GPU 
+
    + Implement Environment
    + Implement Network Submodule3D Four-Conv
    + Implement Replay
    + Implement Agent
    + Implement Actor - Learner
+   
 4/ Train on GPU Banshee @ Heron Systems
    
 =========================================================================================================
@@ -39,18 +43,22 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
    conda activate cartpole
    -- copy setup.py and adjust accordingly with libraries to avoid pip install
    python setup.py develop
+   
 * Pycharm:
    File => Setting => Project: cartpole
    Python Interpreter => "Circle symbol" => Existing environment => bin => python
    OK
 
 2/ How to train/run on GPU/Banshee/Siren
+
    a/ Copy training files to GPU:
       rsync -r /home/minhtnguyen/Documents/myproject/Tutorials/CartPole_DQN_Project /media                                                    
       /banshee/users/minh/
+      
    b/ Log in to GPU:
       ssh heron@banshee
       PW: Check google note
+      
    c/ on Heron@Banshee, do cd /media and go to working directory containing setup.py
       Terminal:
          conda create -n cartpole python=3.8
