@@ -1,9 +1,12 @@
 # Mario_RL_Adept
 About: Implement Mario DQN from Pytorch Tutorial with Adept Framework @Heron Systems
+
 Credit: 
+
     https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
-    Kaise Alnatour
+        
 Framework: https://github.com/heronsystems/adeptRL
+
 Wiki@Heron: http://192.168.1.30/
 
 =============================================================================
@@ -124,7 +127,7 @@ Mario_RL/marioRL/Split
         
         - main.py 
         
-    (run python ./main.py to execute the training)
+    (RUN: python ./main.py to execute the training)
 
 Mario_RL/marioRL/Adept
 
@@ -146,6 +149,21 @@ Mario_RL/marioRL/Adept
     
         - adept_main.py
         
-    (run python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMarioBros-1-1-v0 --net3d AdeptMarioNet --netbody Linear)
+    (RUN: python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMarioBros-1-1-v0 --net3d AdeptMarioNet --netbody Linear)
     
- 
+=============================================================================
+How to check trained agent on banshee GPU @ Heron?
+    ssh heron@banshee - PW: check phone
+    
+    cd /tmp/adept_logs/SuperMarioBros-1-1-v0/Local_AdeptMarioAgent_Linear_2021-01-05-18-23-00
+    
+    Then copy that dir to /media/banshee/users/minh/mario_test/
+    
+    go to local machine and cd to /media/banshee/users/minh/mario_test/SuperMarioBros (...)
+
+    cd to latest trained log
+    
+    RUN: python -m adept.scripts.render --logdir . --epoch 2e6
+    
+    
+    
