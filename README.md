@@ -152,6 +152,7 @@ Mario_RL/marioRL/Adept
     (RUN: python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMarioBros-1-1-v0 --net3d AdeptMarioNet --netbody Linear)
     
 =============================================================================
+
 How to check trained agent on banshee GPU @ Heron?
     ssh heron@banshee - PW: check phone
     
@@ -164,6 +165,17 @@ How to check trained agent on banshee GPU @ Heron?
     cd to latest trained log
     
     RUN: python -m adept.scripts.render --logdir . --epoch 2e6
+
+=============================================================================
+
+How to Run Tensorboard on trained model?
+    ssh heron@banshee - PW: check phone
+    
+    conda activate marioRL
+    
+    cd /tmp/adept_logs/SuperMarioBros-1-1-v0/Local_AdeptMarioAgent_Linear_2021-01-05_18-23-00 
+    
+    tensorboard --logdir . --bind_all
     
     
     
