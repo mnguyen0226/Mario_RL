@@ -74,3 +74,30 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
    TO STOP: CRTL-D or type exit
    
 ========================================================================================================
+FILE STRUCTURE EXPLAINED:
+
+1/ Original Pytorch Mario DQN Tutorial: Mario_RL/mario.py
+
+2/ Module-divided Mario DQN:
+Mario_RL/marioRL/Split
+    - module 
+        - agent_dqn.py
+        - logger.py
+        - marioNet.py
+        - preprocess.py
+    - scripts
+        - checkpoints (saved trained agents)
+        - main.py 
+    (run python ./main.py to execute the training)
+
+Mario_RL/marioRL/Adept
+    - modules
+        - adept_actor.py
+        - adept_agent.py
+        - adept_env.py
+        - adept_learner.py
+        - adept_net.py
+        - adept_replay.py
+    - script
+        - adept_main.py
+    (run python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMarioBros-1-1-v0 --net3d AdeptMarioNet --netbody Linear)
