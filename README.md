@@ -1,6 +1,8 @@
 # Mario_RL_Adept
 About: Implement Mario DQN from Pytorch Tutorial with Adept Framework @Heron Systems
-Credit: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
+Credit: 
+    https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
+    Kaise Alnatour
 Framework: https://github.com/heronsystems/adeptRL
 Wiki@Heron: http://192.168.1.30/
 
