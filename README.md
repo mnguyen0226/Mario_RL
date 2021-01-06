@@ -4,6 +4,8 @@ Credit: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
 Framework: https://github.com/heronsystems/adeptRL
 Wiki@Heron: http://192.168.1.30/
 
+============================================================================================================================
+
 ***** Training command local or gpu *****
 
 python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMarioBros-1-1-v0 --net3d AdeptMarioNet --netbody Linear
@@ -20,6 +22,8 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
    + Implement Actor - Learner
 4/ Train on GPU Banshee @ Heron Systems
    
+============================================================================================================================
+
 ***** Notes *****
 
 1/ How to start a Python Project? (Assume working on Pycharm + Anaconda + GPU)
@@ -61,4 +65,5 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
    
    TO EXIT WITHOUT STOP: Ctrl-B + D
    TO STOP: CRTL-D or type exit
-   ===========================================================================================
+   
+============================================================================================================================
