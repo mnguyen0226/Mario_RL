@@ -56,29 +56,44 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
       /banshee/users/minh/
       
    b/ Log in to GPU:
+   
       ssh heron@banshee
+      
       PW: Check google note
       
    c/ on Heron@Banshee, do cd /media and go to working directory containing setup.py
       Terminal:
+      
          conda create -n cartpole python=3.8
+         
          conda activate cartpole
+         
          -- copy setup.py and adjust accordingly with libraries to avoid pip install
+         
          python setup.py develop
+         
       Go to the .py file for training (for ex: Mario_RL/marioRL/Adept/script/adept_main.py)
+      
       Execute the training command and wait for results every 6000000 steps in "checkpoints" directory
 
 3/ How to run on TMUX over night? (assume already copy files to /media/banshee with rsync -r)
+
    ssh heron@banshee
+   
    PW: Check google note
+   
    cd /media => to your training file or directory
    
    tmux new 
+   
    Ctrl-B + D to exit but not stop, remember number #
+   
    tmux attach -t #
+   
    then run the train command
    
    TO EXIT WITHOUT STOP: Ctrl-B + D
+   
    TO STOP: CRTL-D or type exit
    
 ========================================================================================================
