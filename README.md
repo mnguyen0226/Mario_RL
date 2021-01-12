@@ -6,6 +6,7 @@ Credit:
     https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
         
 Framework: https://github.com/heronsystems/adeptRL
+    After conda create, beside doing the "python setup.py develop" in gamebreaker folder, go to adeptRL that you download and do "pip install -e .[all]"
 
 Wiki@Heron: http://192.168.1.30/
 
@@ -47,7 +48,9 @@ python adept_mario_script.py --agent AdeptMarioAgent --nb-env 2 --env SuperMario
 1/ How to start a Python Project? (Assume working on Pycharm + Anaconda + GPU)
 * Terminal:
    conda create -n cartpole python=3.8
+   
    conda activate cartpole
+   
    -- copy setup.py and adjust accordingly with libraries to avoid pip install
    python setup.py develop
    
